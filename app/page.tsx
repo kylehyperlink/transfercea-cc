@@ -173,8 +173,8 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">System Integration</h3>
               <p className="text-slate-400 leading-relaxed text-sm font-medium">
-                Connect your LMS, CE Broker feed, HRIS, and legacy platforms
-                into a single normalized data layer. No more reconciling
+                Connect your LMS, compliance platforms, HRIS, and legacy
+                systems into a single normalized data layer. No more reconciling
                 spreadsheet exports.
               </p>
             </div>
@@ -231,7 +231,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-indigo-400 mt-0.5 shrink-0">→</span>
-                  <span>CE records normalized from any source, including CE Broker exports</span>
+                  <span>CE records normalized from any source, including third-party compliance platform exports</span>
                 </li>
               </ul>
               <a
@@ -262,7 +262,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-white mt-0.5 shrink-0">→</span>
-                  <span>Data quality audits before migrating to new platforms or CE Broker</span>
+                  <span>Data quality audits before migrating to a new platform or compliance system</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-white mt-0.5 shrink-0">→</span>
@@ -306,8 +306,8 @@ export default function Home() {
               Built to work with the tools your CE ecosystem already trusts.
             </h2>
             <p className="text-lg text-slate-500 mb-12 leading-relaxed">
-              Platforms like CE Broker handle the compliance pipeline — we handle
-              the intelligence layer around it. CEA ingests data from any source,
+              Your compliance platforms handle the submission pipeline — we handle
+              the intelligence layer around them. CEA ingests data from any source,
               normalizes it for analysis, and makes it portable when you need to move.
             </p>
 
@@ -318,9 +318,9 @@ export default function Home() {
                   <span>Format-Agnostic Ingestion</span>
                 </h4>
                 <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                  We normalize data from any LMS, spreadsheet, CE Broker
-                  export, or API feed into a clean, consistent record set
-                  ready for analysis or migration.
+                  We normalize data from any LMS, spreadsheet, compliance
+                  platform export, or API feed into a clean, consistent
+                  record set ready for analysis or migration.
                 </p>
               </div>
               <div>
@@ -330,7 +330,7 @@ export default function Home() {
                 </h4>
                 <p className="text-sm text-slate-500 leading-relaxed font-medium">
                   We read from your existing systems without altering them.
-                  Your CE Broker setup, your LMS, your HRIS — all stay
+                  Your compliance platforms, your LMS, your HRIS — all stay
                   exactly as they are.
                 </p>
               </div>
