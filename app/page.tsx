@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 import Image from 'next/image'
-import { ArrowRight, BarChart2, ArrowLeftRight, ClipboardCheck, Building2, GraduationCap } from 'lucide-react'
+import { ArrowRight, BarChart2, Plug, MoveRight, Building2, GraduationCap } from 'lucide-react'
 
 export default function Home() {
   useEffect(() => {
@@ -60,16 +60,16 @@ export default function Home() {
             <div className="lg:col-span-7 reveal">
               <div className="inline-flex items-center space-x-2 bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-8">
                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full" />
-                <span>CE Analytics &amp; Transfer Services</span>
+                <span>CE Analytics &amp; Data Integration</span>
               </div>
               <h1 className="text-5xl lg:text-8xl font-extrabold leading-[1.05] mb-8 tracking-tighter">
-                Data that moves <br />
-                <span className="italic text-indigo-700">CE forward.</span>
+                Clarity across <br />
+                <span className="italic text-indigo-700">your CE data.</span>
               </h1>
               <p className="text-lg md:text-xl text-slate-500 mb-12 max-w-xl leading-relaxed font-medium mx-auto lg:mx-0">
-                We connect continuing education providers and licensing bodies
-                through precise analytics, seamless record transfer, and
-                compliance reporting built for the modern CE ecosystem.
+                We sit alongside your existing compliance tools — turning siloed
+                CE records, LMS exports, and platform data into unified
+                intelligence your organization can actually act on.
               </p>
 
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center lg:justify-start">
@@ -113,10 +113,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: '50+', label: 'Licensing Bodies Served' },
-              { value: 'Multi-State', label: 'Compliance Coverage' },
-              { value: '99.9%', label: 'Transfer Accuracy' },
-              { value: 'Real-Time', label: 'Reporting Engine' },
+              { value: 'Any Source', label: 'LMS & Platform Support' },
+              { value: 'Unified', label: 'Cross-System Data View' },
+              { value: 'Zero-Loss', label: 'Migration Accuracy' },
+              { value: 'Real-Time', label: 'Analytics Engine' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <p className="text-2xl font-extrabold text-slate-900 tracking-tight">{stat.value}</p>
@@ -133,19 +133,19 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-24 mb-32 items-end">
             <div className="reveal">
               <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight mb-8">
-                CE Infrastructure <br />Built to Last.
+                The analytics layer <br />your CE stack is missing.
               </h2>
               <p className="text-slate-500 text-lg leading-relaxed max-w-lg">
-                Continuing Education Authority bridges the gap between providers
-                and licensing bodies — turning fragmented records into a single
-                source of truth.
+                CEA doesn&apos;t replace your compliance platforms — it connects them.
+                We pull data from wherever your CE lives and turn it into a clear,
+                queryable picture of organizational performance.
               </p>
             </div>
             <div className="reveal lg:text-right" style={{ transitionDelay: '100ms' }}>
               <div className="inline-block text-left bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                <p className="text-indigo-700 font-black text-4xl mb-2">99.9%</p>
+                <p className="text-indigo-700 font-black text-4xl mb-2">Zero-Loss</p>
                 <p className="text-xs uppercase tracking-widest font-black text-slate-400">
-                  Transfer Accuracy Rate
+                  Migration Accuracy
                 </p>
               </div>
             </div>
@@ -158,8 +158,9 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-bold mb-4">CE Analytics</h3>
               <p className="text-slate-500 leading-relaxed text-sm font-medium">
-                Deep insight into completion rates, compliance gaps, and
-                learner trends across your entire CE portfolio.
+                Surface completion trends, gap analysis, and learner behavior
+                across every CE platform and LMS your organization uses — in
+                one unified view.
               </p>
             </div>
 
@@ -168,12 +169,13 @@ export default function Home() {
               style={{ transitionDelay: '100ms' }}
             >
               <div className="w-12 h-12 bg-white/10 text-white rounded-xl flex items-center justify-center mb-8">
-                <ArrowLeftRight size={24} />
+                <Plug size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-white">Data Transfer</h3>
+              <h3 className="text-xl font-bold mb-4 text-white">System Integration</h3>
               <p className="text-slate-400 leading-relaxed text-sm font-medium">
-                Secure, validated transfer of CE records between providers,
-                registries, and licensing bodies — in any required format.
+                Connect your LMS, CE Broker feed, HRIS, and legacy platforms
+                into a single normalized data layer. No more reconciling
+                spreadsheet exports.
               </p>
             </div>
 
@@ -182,12 +184,13 @@ export default function Home() {
               style={{ transitionDelay: '200ms' }}
             >
               <div className="w-12 h-12 bg-white/20 text-white rounded-xl flex items-center justify-center mb-8">
-                <ClipboardCheck size={24} />
+                <MoveRight size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-white">Compliance Reporting</h3>
+              <h3 className="text-xl font-bold mb-4 text-white">Record Migration</h3>
               <p className="text-indigo-100 leading-relaxed text-sm font-medium">
-                Automated, audit-ready reports submitted directly to regulatory
-                bodies on your schedule.
+                Move historical CE records between platforms with full
+                validation and audit trails. We handle the schema mapping
+                so nothing gets lost in translation.
               </p>
             </div>
           </div>
@@ -202,7 +205,7 @@ export default function Home() {
               Who We Serve
             </span>
             <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight">
-              Built for every node <br />in the CE network.
+              For the organizations <br />behind the learners.
             </h2>
           </div>
 
@@ -212,30 +215,30 @@ export default function Home() {
                 <Building2 size={24} className="text-white" />
               </div>
               <p className="text-indigo-400 uppercase tracking-widest text-[10px] font-black mb-3">
-                For Licensing Bodies
+                For Organizations &amp; Employers
               </p>
               <h3 className="text-2xl font-extrabold mb-6 tracking-tight">
-                Receive clean, verified CE data without the manual overhead.
+                A real-time view of CE compliance across your entire workforce.
               </h3>
               <ul className="space-y-3 text-slate-400 text-sm font-medium mb-10">
                 <li className="flex items-start space-x-3">
                   <span className="text-indigo-400 mt-0.5 shrink-0">→</span>
-                  <span>Standardized records mapped to your exact requirements</span>
+                  <span>Workforce-wide completion dashboards across all CE platforms</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-indigo-400 mt-0.5 shrink-0">→</span>
-                  <span>Automated inbound reporting from accredited providers</span>
+                  <span>Gap reporting and renewal deadline alerts before they become problems</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-indigo-400 mt-0.5 shrink-0">→</span>
-                  <span>Audit trail and compliance dashboards on demand</span>
+                  <span>CE records normalized from any source, including CE Broker exports</span>
                 </li>
               </ul>
               <a
-                href="mailto:contact@transfercea.cc?subject=Licensing+Body+Inquiry"
+                href="mailto:contact@transfercea.cc?subject=Organization+Inquiry"
                 className="inline-block bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold text-sm hover:bg-indigo-500 transition-colors"
               >
-                Inquire as a Licensing Body →
+                Inquire as an Organization →
               </a>
             </div>
 
@@ -250,20 +253,20 @@ export default function Home() {
                 For CE Providers
               </p>
               <h3 className="text-2xl font-extrabold mb-6 tracking-tight">
-                Report completions to every body you&apos;re accredited with.
+                Understand your learners and keep your data clean wherever it lives.
               </h3>
               <ul className="space-y-3 text-indigo-100 text-sm font-medium mb-10">
                 <li className="flex items-start space-x-3">
                   <span className="text-white mt-0.5 shrink-0">→</span>
-                  <span>One integration, multi-body reporting coverage</span>
+                  <span>Completion and engagement analytics across all your course offerings</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-white mt-0.5 shrink-0">→</span>
-                  <span>Real-time confirmation and error resolution</span>
+                  <span>Data quality audits before migrating to new platforms or CE Broker</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-white mt-0.5 shrink-0">→</span>
-                  <span>Learner analytics to strengthen your course offerings</span>
+                  <span>Historical record exports in any format your organization needs</span>
                 </li>
               </ul>
               <a
@@ -300,13 +303,12 @@ export default function Home() {
               The CEA Approach
             </span>
             <h2 className="text-4xl lg:text-6xl font-extrabold leading-tight mb-8 tracking-tighter">
-              Precision infrastructure for a fragmented ecosystem.
+              Built to work with the tools your CE ecosystem already trusts.
             </h2>
             <p className="text-lg text-slate-500 mb-12 leading-relaxed">
-              The continuing education landscape spans dozens of accreditation
-              bodies, formats, and reporting standards. CEA unifies it — giving
-              every stakeholder a reliable, real-time picture of compliance
-              without the manual burden.
+              Platforms like CE Broker handle the compliance pipeline — we handle
+              the intelligence layer around it. CEA ingests data from any source,
+              normalizes it for analysis, and makes it portable when you need to move.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-10">
@@ -316,18 +318,20 @@ export default function Home() {
                   <span>Format-Agnostic Ingestion</span>
                 </h4>
                 <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                  We normalize data from any LMS, spreadsheet, or API feed
-                  into a validated, transfer-ready record set.
+                  We normalize data from any LMS, spreadsheet, CE Broker
+                  export, or API feed into a clean, consistent record set
+                  ready for analysis or migration.
                 </p>
               </div>
               <div>
                 <h4 className="font-bold text-slate-900 mb-3 flex items-center space-x-2">
                   <span className="w-2 h-2 bg-indigo-700 rounded-full" />
-                  <span>Body-Specific Mapping</span>
+                  <span>Non-Destructive Integration</span>
                 </h4>
                 <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                  Each licensing body has unique schemas and deadlines. Our
-                  library of mappings keeps submissions accurate and on time.
+                  We read from your existing systems without altering them.
+                  Your CE Broker setup, your LMS, your HRIS — all stay
+                  exactly as they are.
                 </p>
               </div>
             </div>
@@ -348,9 +352,9 @@ export default function Home() {
               Let&apos;s connect.
             </h2>
             <p className="text-slate-400 text-lg mb-16 max-w-2xl mx-auto font-medium leading-relaxed">
-              Whether you&apos;re a licensing body looking to modernize intake or a
-              CE provider ready to automate reporting, we&apos;re ready to help you
-              close the gap.
+              Whether you&apos;re an organization looking to unify CE data across
+              platforms or a CE provider ready to move to cleaner infrastructure,
+              we&apos;re here to help.
             </p>
 
             <a
