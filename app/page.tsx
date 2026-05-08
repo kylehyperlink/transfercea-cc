@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 import Image from 'next/image'
-import { ArrowRight, BarChart2, Plug, MoveRight, Building2, GraduationCap } from 'lucide-react'
+import { ArrowRight, UserPlus, ShieldCheck, CalendarCheck, Building2, Users } from 'lucide-react'
 
 export default function Home() {
   useEffect(() => {
@@ -30,12 +30,12 @@ export default function Home() {
             <div className="w-8 h-8 bg-indigo-700 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xs">CEA</span>
             </div>
-            <span className="font-extrabold text-lg tracking-tight">Continuing Education<span className="text-indigo-700"> Authority</span></span>
+            <span className="font-extrabold text-lg tracking-tight">Transfer<span className="text-indigo-700">CEA</span></span>
           </div>
 
           <div className="hidden md:flex space-x-8 text-[11px] font-black uppercase tracking-[0.2em] text-slate-400">
             <a href="#services" className="hover:text-indigo-600 transition-colors">Services</a>
-            <a href="#approach" className="hover:text-indigo-600 transition-colors">Approach</a>
+            <a href="#how-it-works" className="hover:text-indigo-600 transition-colors">How It Works</a>
             <a href="#contact" className="hover:text-indigo-600 transition-colors">Contact</a>
           </div>
 
@@ -60,16 +60,16 @@ export default function Home() {
             <div className="lg:col-span-7 reveal">
               <div className="inline-flex items-center space-x-2 bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-8">
                 <span className="w-1.5 h-1.5 bg-indigo-600 rounded-full" />
-                <span>CE Analytics &amp; Data Integration</span>
+                <span>CE Compliance Enrollment Services</span>
               </div>
               <h1 className="text-5xl lg:text-8xl font-extrabold leading-[1.05] mb-8 tracking-tighter">
-                Clarity across <br />
-                <span className="italic text-indigo-700">your CE data.</span>
+                CE compliance, <br />
+                <span className="italic text-indigo-700">handled for you.</span>
               </h1>
               <p className="text-lg md:text-xl text-slate-500 mb-12 max-w-xl leading-relaxed font-medium mx-auto lg:mx-0">
-                We sit alongside your existing compliance tools — turning siloed
-                CE records, LMS exports, and platform data into unified
-                intelligence your organization can actually act on.
+                We create and maintain CE compliance accounts on behalf of your
+                licensed staff. Your team gets a dedicated compliance identity —
+                we handle everything behind it.
               </p>
 
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center lg:justify-start">
@@ -77,7 +77,7 @@ export default function Home() {
                   href="#contact"
                   className="bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-indigo-700 transition-all shadow-xl shadow-slate-200 text-center"
                 >
-                  Partner With Us
+                  Enroll Your Organization
                 </a>
                 <a
                   href="mailto:contact@transfercea.cc"
@@ -95,8 +95,8 @@ export default function Home() {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-8 border-slate-50">
                 <Image
-                  src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=1200"
-                  alt="Data analytics and education"
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200"
+                  alt="Healthcare compliance administration"
                   width={600}
                   height={550}
                   className="w-full h-[550px] object-cover"
@@ -113,10 +113,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 py-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: 'Any Source', label: 'LMS & Platform Support' },
-              { value: 'Unified', label: 'Cross-System Data View' },
-              { value: 'Zero-Loss', label: 'Migration Accuracy' },
-              { value: 'Real-Time', label: 'Analytics Engine' },
+              { value: 'White-Glove', label: 'Enrollment Service' },
+              { value: 'Dedicated', label: 'Compliance Identity per Staff' },
+              { value: 'Multi-State', label: 'Licensing Coverage' },
+              { value: 'Ongoing', label: 'Renewal Management' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <p className="text-2xl font-extrabold text-slate-900 tracking-tight">{stat.value}</p>
@@ -133,19 +133,20 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-24 mb-32 items-end">
             <div className="reveal">
               <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight mb-8">
-                The analytics layer <br />your CE stack is missing.
+                From enrollment to <br />renewal — we own it.
               </h2>
               <p className="text-slate-500 text-lg leading-relaxed max-w-lg">
-                CEA doesn&apos;t replace your compliance platforms — it connects them.
-                We pull data from wherever your CE lives and turn it into a clear,
-                queryable picture of organizational performance.
+                For healthcare organizations and professional associations,
+                managing CE compliance across a licensed workforce is a
+                significant operational burden. TransferCEA takes it off
+                your plate entirely.
               </p>
             </div>
             <div className="reveal lg:text-right" style={{ transitionDelay: '100ms' }}>
               <div className="inline-block text-left bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                <p className="text-indigo-700 font-black text-4xl mb-2">Zero-Loss</p>
+                <p className="text-indigo-700 font-black text-4xl mb-2">End-to-End</p>
                 <p className="text-xs uppercase tracking-widest font-black text-slate-400">
-                  Migration Accuracy
+                  Compliance Administration
                 </p>
               </div>
             </div>
@@ -154,13 +155,13 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-slate-50 p-12 rounded-[2.5rem] border border-slate-100 reveal group hover:bg-white hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-indigo-50 text-indigo-700 rounded-xl flex items-center justify-center mb-8 group-hover:bg-indigo-700 group-hover:text-white transition-all duration-300">
-                <BarChart2 size={24} />
+                <UserPlus size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-4">CE Analytics</h3>
+              <h3 className="text-xl font-bold mb-4">Account Enrollment</h3>
               <p className="text-slate-500 leading-relaxed text-sm font-medium">
-                Surface completion trends, gap analysis, and learner behavior
-                across every CE platform and LMS your organization uses — in
-                one unified view.
+                We set up and configure CE compliance accounts for each
+                member of your licensed workforce — accurately, completely,
+                and without burdening your staff.
               </p>
             </div>
 
@@ -169,13 +170,13 @@ export default function Home() {
               style={{ transitionDelay: '100ms' }}
             >
               <div className="w-12 h-12 bg-white/10 text-white rounded-xl flex items-center justify-center mb-8">
-                <Plug size={24} />
+                <ShieldCheck size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-white">System Integration</h3>
+              <h3 className="text-xl font-bold mb-4 text-white">Compliance Identity</h3>
               <p className="text-slate-400 leading-relaxed text-sm font-medium">
-                Connect your LMS, compliance platforms, HRIS, and legacy
-                systems into a single normalized data layer. No more reconciling
-                spreadsheet exports.
+                Each staff member receives a dedicated, managed email
+                identity for CE correspondence — keeping compliance
+                communications organized and separate from personal inboxes.
               </p>
             </div>
 
@@ -184,13 +185,13 @@ export default function Home() {
               style={{ transitionDelay: '200ms' }}
             >
               <div className="w-12 h-12 bg-white/20 text-white rounded-xl flex items-center justify-center mb-8">
-                <MoveRight size={24} />
+                <CalendarCheck size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-white">Record Migration</h3>
+              <h3 className="text-xl font-bold mb-4 text-white">Renewal Management</h3>
               <p className="text-indigo-100 leading-relaxed text-sm font-medium">
-                Move historical CE records between platforms with full
-                validation and audit trails. We handle the schema mapping
-                so nothing gets lost in translation.
+                We track renewal deadlines across your entire workforce and
+                manage the ongoing compliance calendar so nothing lapses
+                on your watch.
               </p>
             </div>
           </div>
@@ -205,7 +206,7 @@ export default function Home() {
               Who We Serve
             </span>
             <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight">
-              For the organizations <br />behind the learners.
+              Built for organizations <br />managing licensed professionals.
             </h2>
           </div>
 
@@ -215,30 +216,30 @@ export default function Home() {
                 <Building2 size={24} className="text-white" />
               </div>
               <p className="text-indigo-400 uppercase tracking-widest text-[10px] font-black mb-3">
-                For Organizations &amp; Employers
+                Healthcare Organizations
               </p>
               <h3 className="text-2xl font-extrabold mb-6 tracking-tight">
-                A real-time view of CE compliance across your entire workforce.
+                CE compliance enrollment for your entire clinical workforce.
               </h3>
               <ul className="space-y-3 text-slate-400 text-sm font-medium mb-10">
                 <li className="flex items-start space-x-3">
                   <span className="text-indigo-400 mt-0.5 shrink-0">→</span>
-                  <span>Workforce-wide completion dashboards across all CE platforms</span>
+                  <span>New hire CE accounts created and configured from day one</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-indigo-400 mt-0.5 shrink-0">→</span>
-                  <span>Gap reporting and renewal deadline alerts before they become problems</span>
+                  <span>Dedicated compliance identities keep CE correspondence off personal inboxes</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-indigo-400 mt-0.5 shrink-0">→</span>
-                  <span>CE records normalized from any source, including third-party compliance platform exports</span>
+                  <span>Renewal tracking across multi-state licensed staff with no manual overhead</span>
                 </li>
               </ul>
               <a
-                href="mailto:contact@transfercea.cc?subject=Organization+Inquiry"
+                href="mailto:contact@transfercea.cc?subject=Healthcare+Organization+Inquiry"
                 className="inline-block bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold text-sm hover:bg-indigo-500 transition-colors"
               >
-                Inquire as an Organization →
+                Inquire for Your Organization →
               </a>
             </div>
 
@@ -247,47 +248,47 @@ export default function Home() {
               style={{ transitionDelay: '100ms' }}
             >
               <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-8">
-                <GraduationCap size={24} className="text-white" />
+                <Users size={24} className="text-white" />
               </div>
               <p className="text-indigo-200 uppercase tracking-widest text-[10px] font-black mb-3">
-                For CE Providers
+                Professional Associations
               </p>
               <h3 className="text-2xl font-extrabold mb-6 tracking-tight">
-                Understand your learners and keep your data clean wherever it lives.
+                Enroll and support your members&apos; CE compliance at scale.
               </h3>
               <ul className="space-y-3 text-indigo-100 text-sm font-medium mb-10">
                 <li className="flex items-start space-x-3">
                   <span className="text-white mt-0.5 shrink-0">→</span>
-                  <span>Completion and engagement analytics across all your course offerings</span>
+                  <span>Bulk enrollment for new and existing members</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-white mt-0.5 shrink-0">→</span>
-                  <span>Data quality audits before migrating to a new platform or compliance system</span>
+                  <span>Managed compliance identities your members can rely on</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <span className="text-white mt-0.5 shrink-0">→</span>
-                  <span>Historical record exports in any format your organization needs</span>
+                  <span>Ongoing administration so your team focuses on member value, not paperwork</span>
                 </li>
               </ul>
               <a
-                href="mailto:contact@transfercea.cc?subject=CE+Provider+Inquiry"
+                href="mailto:contact@transfercea.cc?subject=Association+Inquiry"
                 className="inline-block bg-white text-indigo-700 px-8 py-4 rounded-2xl font-bold text-sm hover:bg-indigo-50 transition-colors"
               >
-                Inquire as a CE Provider →
+                Inquire for Your Association →
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Approach */}
-      <section id="approach" className="py-32 overflow-hidden">
+      {/* How It Works */}
+      <section id="how-it-works" className="py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-20 items-center">
           <div className="lg:col-span-5 reveal">
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl rotate-2">
               <Image
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000"
-                alt="Data and analytics dashboard"
+                alt="Enrollment workflow"
                 width={500}
                 height={600}
                 className="w-full h-[600px] object-cover"
@@ -300,38 +301,38 @@ export default function Home() {
             style={{ transitionDelay: '150ms' }}
           >
             <span className="text-indigo-700 font-black uppercase tracking-[0.3em] text-[10px] mb-6 block">
-              The CEA Approach
+              How It Works
             </span>
             <h2 className="text-4xl lg:text-6xl font-extrabold leading-tight mb-8 tracking-tighter">
-              Built to work with the tools your CE ecosystem already trusts.
+              Simple for your team. Comprehensive behind the scenes.
             </h2>
             <p className="text-lg text-slate-500 mb-12 leading-relaxed">
-              Your compliance platforms handle the submission pipeline — we handle
-              the intelligence layer around them. CEA ingests data from any source,
-              normalizes it for analysis, and makes it portable when you need to move.
+              Your organization sends us your licensed staff roster. We handle
+              account creation, identity provisioning, and ongoing compliance
+              management — your staff never has to think about it.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-10">
               <div>
                 <h4 className="font-bold text-slate-900 mb-3 flex items-center space-x-2">
                   <span className="w-2 h-2 bg-indigo-700 rounded-full" />
-                  <span>Format-Agnostic Ingestion</span>
+                  <span>Hands-Off Onboarding</span>
                 </h4>
                 <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                  We normalize data from any LMS, spreadsheet, compliance
-                  platform export, or API feed into a clean, consistent
-                  record set ready for analysis or migration.
+                  Share your roster and we take it from there — accounts
+                  configured, identities provisioned, and confirmation
+                  delivered back to your HR team.
                 </p>
               </div>
               <div>
                 <h4 className="font-bold text-slate-900 mb-3 flex items-center space-x-2">
                   <span className="w-2 h-2 bg-indigo-700 rounded-full" />
-                  <span>Non-Destructive Integration</span>
+                  <span>Ongoing Administration</span>
                 </h4>
                 <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                  We read from your existing systems without altering them.
-                  Your compliance platforms, your LMS, your HRIS — all stay
-                  exactly as they are.
+                  We monitor renewal windows, manage compliance correspondence,
+                  and keep every account in good standing — no manual
+                  follow-up required from your side.
                 </p>
               </div>
             </div>
@@ -352,9 +353,9 @@ export default function Home() {
               Let&apos;s connect.
             </h2>
             <p className="text-slate-400 text-lg mb-16 max-w-2xl mx-auto font-medium leading-relaxed">
-              Whether you&apos;re an organization looking to unify CE data across
-              platforms or a CE provider ready to move to cleaner infrastructure,
-              we&apos;re here to help.
+              Whether you&apos;re a healthcare organization ready to offload CE
+              compliance administration or an association looking to support
+              your members at scale, we&apos;re ready to help.
             </p>
 
             <a
@@ -380,17 +381,17 @@ export default function Home() {
               <div className="w-6 h-6 bg-indigo-700 rounded flex items-center justify-center">
                 <span className="text-white font-bold text-[9px]">CEA</span>
               </div>
-              <span className="font-bold text-sm tracking-tight">Continuing Education Authority</span>
+              <span className="font-bold text-sm tracking-tight">TransferCEA</span>
             </div>
 
             <div className="flex space-x-10 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
               <a href="#services" className="hover:text-indigo-600 transition-colors">Services</a>
-              <a href="#approach" className="hover:text-indigo-600 transition-colors">Approach</a>
+              <a href="#how-it-works" className="hover:text-indigo-600 transition-colors">How It Works</a>
               <a href="mailto:contact@transfercea.cc" className="hover:text-indigo-600 transition-colors">Contact</a>
             </div>
 
             <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-300">
-              © {new Date().getFullYear()} Continuing Education Authority. All rights reserved.
+              © {new Date().getFullYear()} TransferCEA. All rights reserved.
             </p>
           </div>
         </div>

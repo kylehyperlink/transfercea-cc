@@ -9,22 +9,22 @@ const plusJakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Continuing Education Authority | CE Analytics & Transfer Services',
+  title: 'TransferCEA | CE Compliance Enrollment Services',
   description:
-    'Precision analytics and seamless data transfer for continuing education providers and licensing bodies. Compliance reporting built for the modern CE ecosystem.',
+    'We create and maintain CE compliance accounts on behalf of your licensed staff. Enrollment, compliance identity, and renewal management for healthcare organizations and professional associations.',
   openGraph: {
-    title: 'Continuing Education Authority | CE Analytics & Transfer Services',
+    title: 'TransferCEA | CE Compliance Enrollment Services',
     description:
-      'Precision analytics and seamless data transfer for continuing education providers and licensing bodies.',
+      'We create and maintain CE compliance accounts on behalf of your licensed staff. Enrollment, compliance identity, and renewal management for healthcare organizations and professional associations.',
     url: 'https://transfercea.cc',
-    siteName: 'Continuing Education Authority',
+    siteName: 'TransferCEA',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Continuing Education Authority | CE Analytics & Transfer Services',
+    title: 'TransferCEA | CE Compliance Enrollment Services',
     description:
-      'Precision analytics and seamless data transfer for continuing education providers and licensing bodies.',
+      'We create and maintain CE compliance accounts on behalf of your licensed staff. Enrollment, compliance identity, and renewal management for healthcare organizations and professional associations.',
   },
 }
 
@@ -35,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={plusJakarta.variable}>
-      <body className="font-sans bg-white text-slate-900 selection:bg-indigo-100 selection:text-indigo-900">
+      <body className="font-sans bg-white text-slate-900 selection:bg-indigo-100 selection:text-indigo-900 antialiased">
         {children}
       </body>
     </html>
