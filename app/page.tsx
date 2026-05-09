@@ -63,7 +63,7 @@ export default function Home() {
                 <span>Compliance Enrollment Services</span>
               </div>
               <h1 className="text-5xl lg:text-8xl font-extrabold leading-[1.05] mb-8 tracking-tighter">
-                compliance, <br />
+                Compliance, <br />
                 <span className="italic text-blue-700">handled for you.</span>
               </h1>
               <p className="text-lg md:text-xl text-slate-500 mb-12 max-w-xl leading-relaxed font-medium mx-auto lg:mx-0">
@@ -353,7 +353,7 @@ export default function Home() {
               Let&apos;s connect.
             </h2>
             <p className="text-slate-400 text-lg mb-16 max-w-2xl mx-auto font-medium leading-relaxed">
-              Whether you&apos;re a healthcare organization ready to offload CE
+              Whether you&apos;re a healthcare organization ready to offload
               compliance administration or an association looking to support
               your members at scale, we&apos;re ready to help.
             </p>
