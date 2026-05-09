@@ -68,8 +68,8 @@ export default function Home() {
               </h1>
               <p className="text-lg md:text-xl text-slate-500 mb-12 max-w-xl leading-relaxed font-medium mx-auto lg:mx-0">
                 We create and maintain compliance accounts on behalf of your
-                licensed staff. Your team gets a dedicated compliance identity —
-                we handle everything behind it.
+                licensed staff. Your team gets a dedicated compliance identity.
+                We handle everything behind it.
               </p>
 
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center lg:justify-start">
@@ -133,7 +133,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-24 mb-32 items-end">
             <div className="reveal">
               <h2 className="text-4xl lg:text-5xl font-extrabold tracking-tight mb-8">
-                From enrollment to <br />renewal — we own it.
+                From enrollment to <br />renewal, we own it.
               </h2>
               <p className="text-slate-500 text-lg leading-relaxed max-w-lg">
                 For healthcare organizations and professional associations,
@@ -160,7 +160,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">Account Enrollment</h3>
               <p className="text-slate-500 leading-relaxed text-sm font-medium">
                 We set up and configure compliance accounts for each
-                member of your licensed workforce — accurately, completely,
+                member of your licensed workforce, accurately, completely,
                 and without burdening your staff.
               </p>
             </div>
@@ -175,7 +175,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4 text-white">Compliance Identity</h3>
               <p className="text-slate-400 leading-relaxed text-sm font-medium">
                 Each staff member receives a dedicated, managed email
-                identity for CE correspondence — keeping compliance
+                identity for CE correspondence, keeping compliance
                 communications organized and separate from personal inboxes.
               </p>
             </div>
@@ -309,7 +309,7 @@ export default function Home() {
             <p className="text-lg text-slate-500 mb-12 leading-relaxed">
               Your organization sends us your licensed staff roster. We handle
               account creation, identity provisioning, and ongoing compliance
-              management — your staff never has to think about it.
+              management. Your staff never has to think about it.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-10">
@@ -319,7 +319,7 @@ export default function Home() {
                   <span>Hands-Off Onboarding</span>
                 </h4>
                 <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                  Share your roster and we take it from there — accounts
+                  Share your roster and we take it from there. Accounts
                   configured, identities provisioned, and confirmation
                   delivered back to your HR team.
                 </p>
@@ -331,7 +331,7 @@ export default function Home() {
                 </h4>
                 <p className="text-sm text-slate-500 leading-relaxed font-medium">
                   We monitor renewal windows, manage compliance correspondence,
-                  and keep every account in good standing — no manual
+                  and keep every account in good standing with no manual
                   follow-up required from your side.
                 </p>
               </div>
